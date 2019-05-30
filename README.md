@@ -92,6 +92,25 @@ additionally if the input is yes and the key is "CompanyName" then the computer 
 if the key is not "CompanyName" then they key should be removed from the keys list, with the break boolean staying false
 
 
+The last section of the program incorporates the previously defined data and function into a simple While True loop. 
+```python
+while True:
+    key_choice = random.choice(keys)
+    df = filter_by_key(df,key_choice)
+    print(len(df))
+    if(break_bool == True):
+        break
+       
+
+
+print(df)
+```
+The loop starts by choosing a random key from the key list. From there, df and the random key will be plugged into the filter_by_key function, returning a new filtered df. If the break_bool is set to true in the function then the loop will be broken.
+
+Finally, one last print statement prints out the entire df which at this point should only be one company. 
+
+
+
 
 ### To-Do
 
