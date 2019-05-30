@@ -68,6 +68,18 @@ def filter_by_key(dataf,key):
 
     return dataf
 ```
+This is the definition of a function that will take in a DataFrame and a key as input. Then after taking in user input, the function will return a new, filtered DataFrame. In this case filtering is reffering to reducing the size of the DataFrame.
+
+Here's the step-by-step
+1) convert the DataFrame of the inputted key to a list, for example the key is sector
+2) set variable choice equal to random choice from this newly created list
+3) create a question variable, and then take in input from the user
+The input can be either "yes" or "no"
+if input is no, then set the data frame equal to the data frame of not the choice
+if input is yes, then set the data frame equal to the data frame of the choice
+additionally if the input is yes and the key is "CompanyName" then the computer has sucessfully guessed the company and the break boolean should be set equal to true
+if the key is not "CompanyName" then they key should be removed from the keys list, with the break boolean staying false
+
 
 
 ### To-Do
