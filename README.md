@@ -43,6 +43,7 @@ keys = ["Sector","HQLocation","CompanyName"]
 break_bool = False
 ```
 Here's the bones of the program
+
 ```python
 def filter_by_key(dataf,key):
     key_list = dataf[key].tolist()
@@ -66,8 +67,7 @@ def filter_by_key(dataf,key):
         #     break_bool = True
 
     return dataf
-    
-    ```
+```
 
 
 ### To-Do
