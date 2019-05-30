@@ -33,6 +33,15 @@ import random
 file_name = "global_500_companies.csv"
 df = pd.read_csv(file_name)¸
 ```
+Some additional set-up is needed in terms of creating a list of keys, and a boolean to control loop breaking
+
+```python
+#make a list of keys for the DataFrame
+keys = ["Sector","HQLocation","CompanyName"]
+
+#bool that can break out of the main loop
+break_bool = False
+```
 
 ### To-Do
 
