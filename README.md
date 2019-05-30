@@ -42,6 +42,32 @@ keys = ["Sector","HQLocation","CompanyName"]
 #bool that can break out of the main loop
 break_bool = False
 ```
+Here's the bones of the program
+```python
+def filter_by_key(dataf,key):
+    key_list = dataf[key].tolist()
+    choice = random.choice(key_list)
+    question = "is it {}?".format(choice)
+    user_input = input(question)
+
+    if(user_input == "n" or user_input == "no"):
+        dataf = dataf[(dataf[key] != choice)]
+    elif(user_input == "y" or user_input == "yes"):
+        if key == "CompanyName":
+            dataf = dataf[(dataf[key] == choice)]
+            global break_bool
+            break_bool = True
+        elif(len(keys) > 1):
+            keys.remove(key)
+            dataf = dataf[(dataf[key] == choice)]
+
+        # elif len(keys) == 1:
+        #     #global break_bool
+        #     break_bool = True
+
+    return dataf
+    ```
+
 
 ### To-Do
 
