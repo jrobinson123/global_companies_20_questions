@@ -131,6 +131,12 @@ Finally, one last print statement prints out the entire df which at this point s
 
 
 ### To-Do
+There are a few additions I'm interested in trying, here they are:
+1) have the program ask questions based on other properties of the company such as profit, revenue, and number of employeees
+2) make the location section multi-layered, for example the computer could ask if the company is headquartered in China, if you said no it would rule out all cities in China like Beijing, Shanghai, and Shenzen
+3) I'm interested in this program taking in other data sets such as the Fortune 500 compared to the Global 500, it would be especially interesting with very large data sets
+4) I want to create a reverse version where the computer choosed a company and you have ask it questions and eventually correctly guess the company it was thiknking of
+
 
 ### References
 
