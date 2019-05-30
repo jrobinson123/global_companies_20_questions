@@ -87,9 +87,27 @@ Here's the step-by-step
 
 The input can be either "yes" or "no"
 if input is no, then set the data frame equal to the data frame of not the choice
-if input is yes, then set the data frame equal to the data frame of the choice
+```python
+   if(user_input == "n" or user_input == "no"):
+        dataf = dataf[(dataf[key] != choice)]
+```
+if input is yes, then set the DataFrame equal to the DataFrame of choice
 additionally if the input is yes and the key is "CompanyName" then the computer has sucessfully guessed the company and the break boolean should be set equal to true
 if the key is not "CompanyName" then they key should be removed from the keys list, with the break boolean staying false
+```python
+    elif(user_input == "y" or user_input == "yes"):
+        if key == "CompanyName":
+            dataf = dataf[(dataf[key] == choice)]
+            global break_bool
+            break_bool = True
+        elif(len(keys) > 1):
+            dataf = dataf[(dataf[key] == choice)]
+            keys.remove(key)
+           
+```
+
+
+
 
 
 The last section of the program incorporates the previously defined data and function into a simple While True loop. 
