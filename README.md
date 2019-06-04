@@ -9,7 +9,7 @@ In this program, the computer will play a 20 questions style text-based game aga
 https://github.com/cmusam/fortune500
 
 ### Dependencies
-This program was written in python3, the libraries used are pandas,numpy, and random
+This program was written in python3, specifically Python 3.6.5 the libraries used are pandas,numpy, and random
 
 
 ### Usage
@@ -132,8 +132,6 @@ print(df)
 The loop starts by choosing a random key from the key list. From there, df and the random key will be plugged into the filter_by_key function, returning a new filtered df. If the break_bool is set to true in the function then the loop will be broken.
 
 Finally, one last print statement prints out the entire df which at this point should only be one company. 
-
-
 
 
 ### To-Do
