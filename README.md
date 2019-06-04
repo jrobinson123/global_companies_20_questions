@@ -17,8 +17,14 @@ This program was written in python3, the libraries used are pandas,numpy, and ra
 2) using the terminal, go into the directory containing this script
 3) run the program from the terminal
 
+```shell
+python3 final_global_companies_20_questions.py
+```
+all text input and output is displayed in the terminal, it should be noted that this program was bulit in Mac so compatability with Windows is expected but not guaranteed
+
+
 ### code explained:
-This program is a text based game. You start by choosing a company listed in the csv file. The company has properties such as the HQLocation, Sector, and of course CompanyName. The computer repeatidley will ask yes or no questions until it is able to guess the company you were thinking of. 
+This program is a text based game. You start by choosing a company listed in the csv file. The company has properties such as the HQLocation, Region, Sector, and of course CompanyName. The computer repeatidley will ask yes or no questions until it is able to guess the company you were thinking of. 
 
 Here's a step-by-step guideline which shows how the code was created:
 
