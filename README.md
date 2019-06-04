@@ -18,11 +18,11 @@ This program was written in python3, the libraries used are pandas,numpy, and ra
 3) run the program from the terminal
 
 ### code explained:
-This program is a text based game. You start by choosing a company listed in the csv file. The company has properties such as the headquarters, sectory, and of course companyname. The computer repeatidley will ask yes or no questions until it is able to guess the company you were thinking of. 
+This program is a text based game. You start by choosing a company listed in the csv file. The company has properties such as the HQLocation, Sector, and of course CompanyName. The computer repeatidley will ask yes or no questions until it is able to guess the company you were thinking of. 
 
 Here's a step-by-step guideline which shows how the code was created:
 
-To start we import needed modules, then load in our csv file and make it a DataFrame using pandas
+To start we import needed modules, then load in our csv file and make it a DataFrame using [pandas](https://pandas.pydata.org/)
 ```python
 #import needed modules
 import pandas as pd
@@ -132,14 +132,18 @@ Finally, one last print statement prints out the entire df which at this point s
 
 ### To-Do
 There are a few additions I'm interested in trying, here they are:
-1) have the program ask questions based on other properties of the company such as profit, revenue, and number of employeees
-2) make the location section multi-layered, for example the computer could ask if the company is headquartered in China, if you said no it would rule out all cities in China like Beijing, Shanghai, and Shenzen
-3) I'm interested in this program taking in other data sets such as the Fortune 500 compared to the Global 500, it would be especially interesting with very large data sets
-4) I want to create a reverse version where the computer choosed a company and you have ask it questions and eventually correctly guess the company it was thiknking of
 
+1) have the program ask questions based on other properties of the company such as profit, revenue, and number of employeees
+2) I'm interested in this program taking in other data sets such as the Fortune 500 compared to the Global 500, it would be especially interesting with very large data sets
+3) I want to create a reverse version where the computer choosed a company and you have ask it questions and eventually correctly guess the company it was thiknking of
+4) add a weighted average to the random choice of keys in the main game loop
 
 ### References
 
-### Insight/motivation
+### Insight/motivation:
+This game effectively blends my interest with corporations and game strategy, In fact 20 questions with corporations is one of my favorite games to play with my family, however they aren't quite as interested as me. Creating this was a school project final. It is also personal passion project due to it's interesting requirement of logic, and cleverly sorting of data. 
+
+ 
+
 
 
