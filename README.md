@@ -47,10 +47,10 @@ Some additional set-up is needed in terms of creating a list of keys, and a bool
 
 ```python
 #make a list of keys for the DataFrame
-keys = ["Sector","HQLocation","CompanyName"]
+keys = ["Sector","Region","CompanyName","HQLocation"]
 
-#bool that can break out of the main loop
-break_bool = False
+#bool that can break out of the main loop if the company is guessed
+company_guessed = False
 ```
 Here's the bones of the program
 
