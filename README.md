@@ -146,6 +146,7 @@ There are a few additions I'm interested in trying, here they are:
 2) I'm interested in this program taking in other data sets such as the Fortune 500 compared to the Global 500, it would be especially interesting with very large data sets
 3) I want to create a reverse version where the computer choosed a company and you have ask it questions and eventually correctly guess the company it was thiknking of
 4) add a weighted average to the random choice of keys in the main game loop
+5) Potentially modify the filter_by_key function in order to make it comply with how Region and HQLocation should act interdependently
 
 ### References
 
