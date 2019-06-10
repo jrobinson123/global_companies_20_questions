@@ -99,17 +99,22 @@ if input is no, then set the data frame equal to the data frame of not the choic
         dataf = dataf[(dataf[key] != choice)]
 ```
 if input is yes, then set the DataFrame equal to the DataFrame of choice
-additionally if the input is yes and the key is "CompanyName" then the computer has sucessfully guessed the company and the break boolean should be set equal to true
-if the key is not "CompanyName" then they key should be removed from the keys list, with the break boolean staying false
+additionally if the input is yes and the key is "CompanyName" then the computer has sucessfully guessed the company and the company_guessed boolean should be set equal to true, it will be illustrated later how this breaks from the main loop.
+If the key is not "CompanyName" then that key should be removed from the keys list, with the break boolean staying false, notice how in the code I check for the len(keys), this part of the logic is difficult to conceptualize so I haven't completely figured it out yet, feel free to leave your thoughts on how to improve the logic if you want to. The function ends by returning a new, modified data frame. 
+
 ```python
-    elif(user_input == "y" or user_input == "yes"):
+       elif(user_input == "y" or user_input == "yes"):
         if key == "CompanyName":
             dataf = dataf[(dataf[key] == choice)]
-            global break_bool
-            break_bool = True
+            global company_guessed
+            company_guessed = True
+        #checking for length of keys is potentially pointless
         elif(len(keys) > 1):
             dataf = dataf[(dataf[key] == choice)]
             keys.remove(key)
+
+    return dataf
+
            
 ```
 
@@ -117,16 +122,15 @@ if the key is not "CompanyName" then they key should be removed from the keys li
 
 
 
-The last section of the program incorporates the previously defined data and function into a simple While True loop. 
+The last section of the program incorporates the previously defined data and function into a simple While True loop.
 ```python
 while True:
+    #add weighted average to the random key choice
     key_choice = random.choice(keys)
     df = filter_by_key(df,key_choice)
     print(len(df))
-    if(break_bool == True):
+    if(company_guessed == True):
         break
-       
-
 
 print(df)
 ```
