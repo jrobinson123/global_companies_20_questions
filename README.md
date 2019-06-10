@@ -66,15 +66,12 @@ def filter_by_key(dataf,key):
     elif(user_input == "y" or user_input == "yes"):
         if key == "CompanyName":
             dataf = dataf[(dataf[key] == choice)]
-            global break_bool
-            break_bool = True
+            global company_guessed
+            company_guessed = True
+        #checking for length of keys is potentially pointless
         elif(len(keys) > 1):
-            keys.remove(key)
             dataf = dataf[(dataf[key] == choice)]
-
-        # elif len(keys) == 1:
-        #     #global break_bool
-        #     break_bool = True
+            keys.remove(key)
 
     return dataf
 ```
