@@ -29,6 +29,7 @@ This program is a text based game. You start by choosing a company listed in the
 Here's a step-by-step guideline which shows how the code was created:
 
 To start we import needed modules, then load in our csv file and make it a DataFrame using [pandas](https://pandas.pydata.org/)
+Then using list comprehension, Region, a new column is added to df (df is our DataFrame)
 ```python
 #import needed modules
 import pandas as pd
@@ -37,7 +38,10 @@ import random
 
 #load the csv file and convert it to a DataFrame
 file_name = "global_500_companies.csv"
-df = pd.read_csv(file_name)¸
+df = pd.read_csv(file_name)
+
+#creation of the Region column
+df["Region"] = [hq[hq.index(",")+2:] for hq in df["HQLocation"]]
 ```
 Some additional set-up is needed in terms of creating a list of keys, and a boolean to control loop breaking
 
