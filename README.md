@@ -1,12 +1,6 @@
 # global_companies_20_questions
 In this program, the computer will play a 20 questions style text-based game against you, start by choosing a company on the csv,the csv includes companies from the Fortune global 500 list in 2015, this list is a ranking of the 500 largest companies by revenue. Once you choose a company, remember the name of the company, the headquarter location, the region that location is in, and the sector that company is in. The computer will ask you yes or no questions until it has guessed the company you were thinking of correctly. 
 
-[<title>](<link>)
-
-
-
-
-
 
 ### Dependencies
 This program was written in python3, specifically Python 3.6.5 the libraries used are pandas, numpy, and random
@@ -150,8 +144,7 @@ There are a few additions I'm interested in trying, here they are:
 5) Potentially modify the filter_by_key function in order to make it comply with how Region and HQLocation should act interdependently
 
 ### References
-https://github.com/cmusam/fortune500 I originally found some useful data on this repo, although I can't refind it
-I ended up downloading on this website:
+https://github.com/cmusam/fortune500 I originally found some useful data on this repo, although I can't refind the csv I downloaded from
 
 ### Insight/motivation:
 This game effectively blends my interest with corporations and game strategy, In fact 20 questions with corporations is one of my favorite games to play with my family, however they aren't quite as interested as me. Creating this was a school project final. It is also personal passion project due to it's interesting requirement of logic, and cleverly sorting of data. 
