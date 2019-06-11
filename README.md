@@ -1,5 +1,5 @@
 # global_companies_20_questions
-In this program, the computer will play a 20 questions style text-based game against you
+In this program, the computer will play a 20 questions style text-based game against you, start by choosing a company on the csv,the csv includes companies from the Fortune global 500 list in 2015, this list is a ranking of the 500 largest companies by revenue. Once you choose a company, remember the name of the company, the headquarter location, the region that location is in, and the sector that company is in. The computer will ask you yes or no questions until it has guessed the company you were thinking of correctly. 
 
 [<title>](<link>)
 
@@ -9,13 +9,14 @@ In this program, the computer will play a 20 questions style text-based game aga
 https://github.com/cmusam/fortune500
 
 ### Dependencies
-This program was written in python3, specifically Python 3.6.5 the libraries used are pandas,numpy, and random
+This program was written in python3, specifically Python 3.6.5 the libraries used are pandas, numpy, and random
 
 
 ### Usage
-1) clone the script
+1) clone the script using git
 2) using the terminal, go into the directory containing this script
 3) run the program from the terminal
+
 
 ```shell
 python3 final_global_companies_20_questions.py
