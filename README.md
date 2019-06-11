@@ -6,7 +6,7 @@ In this program, the computer will play a 20 questions style text-based game aga
 
 
 
-https://github.com/cmusam/fortune500
+
 
 ### Dependencies
 This program was written in python3, specifically Python 3.6.5 the libraries used are pandas, numpy, and random
@@ -150,6 +150,8 @@ There are a few additions I'm interested in trying, here they are:
 5) Potentially modify the filter_by_key function in order to make it comply with how Region and HQLocation should act interdependently
 
 ### References
+https://github.com/cmusam/fortune500 I originally found some useful data on this repo, although I can't refind it
+I ended up downloading on this website:
 
 ### Insight/motivation:
 This game effectively blends my interest with corporations and game strategy, In fact 20 questions with corporations is one of my favorite games to play with my family, however they aren't quite as interested as me. Creating this was a school project final. It is also personal passion project due to it's interesting requirement of logic, and cleverly sorting of data. 
