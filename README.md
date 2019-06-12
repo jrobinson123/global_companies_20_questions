@@ -3,7 +3,9 @@ In this program, the computer will play a 20 questions style text-based game aga
 
 
 ### Dependencies
-This program was written in python3, specifically Python 3.6.5 the libraries used are pandas, numpy, and random
+This program was written in python3, specifically Python 3.6.5 
+
+the libraries used are pandas, numpy, and random
 
 
 ### Usage
@@ -19,7 +21,7 @@ all text input and output is displayed in the terminal, it should be noted that 
 
 
 ### code explained:
-This program is a text based game. You start by choosing a company listed in the csv file. The company has properties such as the HQLocation, Region, Sector, and of course CompanyName. The computer repeatidley will ask yes or no questions until it is able to guess the company you were thinking of. 
+This program is a text based game. You start by choosing a company listed in the csv file. The company has properties such as the HQLocation, Region, Sector, and of course CompanyName. The computer repeatedly will ask yes or no questions until it is able to guess the company you were thinking of. 
 
 Here's a step-by-step guideline which shows how the code was created:
 
@@ -117,10 +119,10 @@ If the key is not "CompanyName" then that key should be removed from the keys li
 
 
 
-The last section of the program incorporates the previously defined data and function into a simple While True loop.
+The last section of the program incorporates the previously defined data and function into a simple While True loop. 
+
 ```python
 while True:
-    #add weighted average to the random key choice
     key_choice = random.choice(keys)
     df = filter_by_key(df,key_choice)
     print(len(df))
@@ -129,7 +131,7 @@ while True:
 
 print(df)
 ```
-The loop starts by choosing a random key from the key list. From there, df and the random key will be plugged into the filter_by_key function, returning a new filtered df. If the break_bool is set to true in the function then the loop will be broken.
+The loop starts by choosing a random key from the key list. From there, df and the random key will be plugged into the filter_by_key function, returning a new filtered df. The length of the df is printed in order to show that the df is being narrowed down following each guess.  If the break_bool is set to true in the function then the loop will be broken.
 
 Finally, one last print statement prints out the entire df which at this point should only be one company. 
 
@@ -137,14 +139,14 @@ Finally, one last print statement prints out the entire df which at this point s
 ### To-Do
 There are a few additions I'm interested in trying, here they are:
 
-1) have the program ask questions based on other properties of the company such as profit, revenue, and number of employeees
+1) have the program ask questions based on other properties of the company such as profit, revenue, and number of employees
 2) I'm interested in this program taking in other data sets such as the Fortune 500 compared to the Global 500, it would be especially interesting with very large data sets
 3) I want to create a reverse version where the computer choosed a company and you have ask it questions and eventually correctly guess the company it was thiknking of
-4) add a weighted average to the random choice of keys in the main game loop
+4) add a weighted average to the random choice of keys in the main game loop, for example Sector should be chosen more than CompanyName
 5) Potentially modify the filter_by_key function in order to make it comply with how Region and HQLocation should act interdependently
 
 ### References
-https://github.com/cmusam/fortune500 I originally found some useful data on this repo, although I can't refind the csv I downloaded from
+https://github.com/cmusam/fortune500 I originally found some useful data on this repo, although I can't refind the csv I originally downloaded
 
 ### Insight/motivation:
 This game effectively blends my interest with corporations and game strategy, In fact 20 questions with corporations is one of my favorite games to play with my family, however they aren't quite as interested as me. Creating this was a school project final. It is also personal passion project due to it's interesting requirement of logic, and cleverly sorting of data. 
