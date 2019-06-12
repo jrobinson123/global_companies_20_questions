@@ -41,7 +41,6 @@ def filter_by_key(dataf,key):
 
 #main game loop
 while True:
-    #add weighted average to the random key choice
     key_choice = random.choice(keys)
     df = filter_by_key(df,key_choice)
     print(len(df))
